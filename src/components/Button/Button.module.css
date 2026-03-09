@@ -1,0 +1,6 @@
+.button {
+  border-radius: calc(infinity * 1px);
+  background-color: beige;
+  color: #333;
+  padding: 10px 20px;
+}
