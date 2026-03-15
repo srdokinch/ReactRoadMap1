@@ -1,6 +1,7 @@
 import './App.css'
 import Button from './components/Button/Button'
 import { useState } from 'react';
+import Display from './components/Display/Display';
 
 function App() {
 
@@ -10,12 +11,14 @@ function App() {
     setCount(count + 1);
   }
 
+
   return (
     <>
       <h1>Hello World</h1>
       <Button type="button" disabled={false} onClick={handleClick}>
-        <span>ボタンクリック：{count}</span>
+        <span>ボタン</span>
       </Button>
+      <Display count={count}/>
     </>
   )
 }
